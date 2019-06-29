@@ -25,6 +25,8 @@ public class AccountController {
     @Autowired
     private AccountService accountService;
 
+
+
     @RequestMapping("/checkLogin")
     @ResponseBody
     public Account checkLogin(HttpServletRequest request){
