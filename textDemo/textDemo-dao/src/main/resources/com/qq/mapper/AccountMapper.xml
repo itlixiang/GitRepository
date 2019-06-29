@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qq.mapper.AccountMapper">
+    <select id="login" resultType="com.qq.domain.Account" parameterType="com.qq.domain.Account">
+        SELECT * FROM account where accountID=#{accountID} and password=#{password}
+    </select>
+</mapper>
